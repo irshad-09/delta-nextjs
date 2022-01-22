@@ -2,17 +2,17 @@ import type { NextPage } from 'next';
 import Head from 'next/head';
 
 import Counter from '../features/counter';
-import styles from '../styles/Home.module.css';
+import Container from '../styles/homeStyles';
 
 const IndexPage: NextPage = () => {
   return (
-    <div className={styles.container}>
+    <Container>
       <Head>
         <title>Redux Toolkit</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <header className={styles.header}>
-        <img src="/logo.svg" className={styles.logo} alt="logo" />
+      <header className="header">
+        <img src="/logo.svg" className="logo" alt="logo" />
         <Counter />
         <p>
           Edit <code>src/App.tsx</code> and save to reload.
@@ -20,7 +20,7 @@ const IndexPage: NextPage = () => {
         <span>
           <span>Learn </span>
           <a
-            className={styles.link}
+            className="link"
             href="https://reactjs.org/"
             target="_blank"
             rel="noopener noreferrer"
@@ -29,7 +29,7 @@ const IndexPage: NextPage = () => {
           </a>
           <span>, </span>
           <a
-            className={styles.link}
+            className="link"
             href="https://redux.js.org/"
             target="_blank"
             rel="noopener noreferrer"
@@ -38,7 +38,7 @@ const IndexPage: NextPage = () => {
           </a>
           <span>, </span>
           <a
-            className={styles.link}
+            className="link"
             href="https://redux-toolkit.js.org/"
             target="_blank"
             rel="noopener noreferrer"
@@ -47,7 +47,7 @@ const IndexPage: NextPage = () => {
           </a>
           ,<span> and </span>
           <a
-            className={styles.link}
+            className="link"
             href="https://react-redux.js.org/"
             target="_blank"
             rel="noopener noreferrer"
@@ -56,7 +56,7 @@ const IndexPage: NextPage = () => {
           </a>
         </span>
       </header>
-    </div>
+    </Container>
   );
 };
 
