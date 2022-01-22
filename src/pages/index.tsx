@@ -2,7 +2,7 @@ import type { NextPage } from 'next';
 import Head from 'next/head';
 
 import Counter from '../features/counter';
-import Container from '../styles/homeStyles';
+import Container from '../styles/home.style';
 
 const IndexPage: NextPage = () => {
   return (
